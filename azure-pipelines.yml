@@ -1,4 +1,10 @@
-
+- task: AzureFileCopy@3
+  inputs:
+    SourcePath: 'https://github.com/79vatsal/AzureStorageBlob.git'
+    azureSubscription: 'Free Trial(475af040-27af-4db0-9bab-7ba87826c3a4)'
+    Destination: 'AzureBlob'
+    storage: 'vthanawalacontainer'
+    ContainerName: 'mizuho'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
