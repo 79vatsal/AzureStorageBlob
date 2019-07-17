@@ -15,7 +15,7 @@ steps:
 
 - task: AzureFileCopy@3
   inputs:
-    SourcePath: \
+    SourcePath: 'script.py'
     azureSubscription: 'Free Trial(475af040-27af-4db0-9bab-7ba87826c3a4)'
     Destination: 'AzureBlob'
     storage: 'vthanawalacontainer'
