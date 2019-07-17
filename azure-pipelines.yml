@@ -10,8 +10,6 @@ pool:
   vmImage: 'vs2017-win2016'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
 
 - task: AzureFileCopy@3
   inputs:
