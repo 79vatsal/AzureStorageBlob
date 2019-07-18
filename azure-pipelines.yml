@@ -22,8 +22,9 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(build.sourcesdirectory)'
-    Contents: '**'
     TargetFolder: '$(build.artifactstagingdirectory)'
+
+
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
