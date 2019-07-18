@@ -17,7 +17,7 @@ steps:
     azureSubscription: 'Free Trial(475af040-27af-4db0-9bab-7ba87826c3a4)'
     Destination: 'AzureBlob'
     storage: 'vthanawalacontainer'
-    ContainerName: 'mizuho'
+    ContainerName: 'mizuho-dev'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
