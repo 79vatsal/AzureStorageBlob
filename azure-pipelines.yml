@@ -19,11 +19,11 @@ steps:
     storage: 'vthanawalacontainer'
     ContainerName: 'mizuho'
 
-- task: PublishBuildArtifacts@1
+- task: CopyFiles@2
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
-    publishLocation: 'Container'
+    SourceFolder: '$(build.sourcesdirectory)'
+    Contents: '**'
+    TargetFolder: '$(build.artifactstagingdirectory)'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
